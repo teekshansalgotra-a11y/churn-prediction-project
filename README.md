@@ -303,7 +303,7 @@ Based on data analysis and model predictions:
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/Churn-Prediction-Project.git
+git clone https://github.com/teekshansalgotra-a11y/Churn-Prediction-Project.git
 cd Churn-Prediction-Project
 ```
 
@@ -465,10 +465,9 @@ This project is licensed under the MIT License - free to use for learning and po
 
 **[Teekshan Salgotra]**
 
-- **Email:** your.email@example.com
+- **Email:** teekshansalgotra@gmail.com
 - **LinkedIn:** [linkedin.com/in/teekshan-salgotra](https://www.linkedin.com/in/teekshan-salgotra-82a182326)
-- **GitHub:** 
-[github.com/teekshansalgotra-a11y](https://github.com/teekshansalgotra-a11y)
+- **GitHub:** [github.com/teekshansalgotra-a11y](https://github.com/teekshansalgotra-a11y)
 
 ---
 
