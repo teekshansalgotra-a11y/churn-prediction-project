@@ -1,0 +1,99 @@
+
+================================================================================
+                    MODEL PERFORMANCE REPORT
+                  CUSTOMER CHURN PREDICTION PROJECT
+================================================================================
+
+Date: March 01, 2026
+
+================================================================================
+                        EXECUTIVE SUMMARY
+================================================================================
+
+Two machine learning models were developed and evaluated:
+1. Logistic Regression (Baseline)
+2. Random Forest (Advanced)
+
+BEST MODEL: Random Forest
+BEST ROC-AUC: 0.831
+
+================================================================================
+                      MODEL PERFORMANCE COMPARISON
+================================================================================
+
+Metric                  Logistic Regression    Random Forest
+------------------------------------------------------------------------
+Accuracy                             74.80%              76.22%
+Precision                            51.84%              54.38%
+Recall                               71.66%              64.71%
+F1-Score                             60.16%              59.10%
+ROC-AUC                              0.819               0.831
+
+================================================================================
+                    CONFUSION MATRIX ANALYSIS
+================================================================================
+
+LOGISTIC REGRESSION:
+                    Predicted
+                No Churn    Churn
+Actual  No Churn      786        249
+        Churn         106        268
+
+RANDOM FOREST:
+                    Predicted
+                No Churn    Churn
+Actual  No Churn      832        203
+        Churn         132        242
+
+================================================================================
+                    TOP 10 FEATURE IMPORTANCE
+================================================================================
+
+Contract                           0.2195
+tenure                             0.1103
+MonthlyCharges                     0.0918
+PaymentMethod                      0.0773
+TotalCharges                       0.0719
+InternetService                    0.0702
+TechSupport                        0.0685
+OnlineSecurity                     0.0681
+Dependents                         0.0388
+OnlineBackup                       0.0382
+
+
+================================================================================
+                    BUSINESS INTERPRETATION
+================================================================================
+
+MODEL PERFORMANCE:
+- The Random Forest model achieved 83.1% ROC-AUC score
+- Can identify 65% of customers who will churn
+- 54% of customers flagged as at-risk actually churn
+
+DEPLOYMENT RECOMMENDATION:
+Use the Random Forest model to:
+1. Score all customers monthly for churn risk
+2. Identify top 20% highest-risk customers
+3. Trigger automated retention campaigns
+4. Prioritize customer success team outreach
+
+EXPECTED BUSINESS IMPACT:
+- Proactively contact 242 at-risk customers per month
+- Reduce churn by 20-30% through targeted interventions
+- Estimated annual revenue protection: $XXX,XXX
+
+================================================================================
+                        NEXT STEPS
+================================================================================
+
+1. Deploy model to production environment
+2. Set up automated scoring pipeline
+3. Integrate with CRM system
+4. Monitor model performance monthly
+5. Retrain model quarterly with new data
+
+================================================================================
+                        REPORT END
+================================================================================
+
+Generated: March 01, 2026 at 02:52 PM

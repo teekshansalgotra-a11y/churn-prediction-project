@@ -1,0 +1,318 @@
+
+                    CUSTOMER CHURN PREDICTION PROJECT
+                        EXPLORATORY DATA ANALYSIS REPORT
+--------------------------------------------------------------------------------
+
+Date: February 26, 2026
+Analyst: [Teekshan SAlgotra]
+EDA: Telecom Customer Churn Analysis
+
+                              EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+
+This report presents a comprehensive analysis of customer churn patterns for a 
+telecommunications company. The analysis examines 7,043 customer records to 
+identify key drivers of customer attrition and provide actionable recommendations 
+to reduce churn rates.
+
+KEY HIGHLIGHTS:
+- Overall churn rate: 26.54%
+- Month-to-month contracts show 42.7% churn rate
+- New customers (0-1 year) are 2.4x more likely to churn
+- Customers without tech support show 2.7x higher churn risk
+
+                              DATASET OVERVIEW
+--------------------------------------------------------------------------------
+
+Total Records:              7,043
+Total Features:             21
+Churned Customers:          1,869
+Retained Customers:         5,174
+Overall Churn Rate:         26.54%
+
+Data Quality Assessment:
+- Missing Values:           0
+- Duplicate Records:        0
+- Data Quality Status:      Excellent
+
+                            KEY FINDINGS & INSIGHTS
+--------------------------------------------------------------------------------
+
+Finding 1: CONTRACT TYPE IS THE STRONGEST CHURN PREDICTOR
+--------------------------------------------------------------------------------
+
+Analysis of contract types reveals significant differences in churn behavior:
+
+Contract Type           Churn Rate      Customer Count
+Month-to-month          42.71%           3,875
+One year                11.27%           1,473
+Two year                 2.83%           1,695
+
+Key Insight:
+Month-to-month customers are 15.1x more likely to churn compared to 
+customers on two-year contracts. This represents the single largest risk factor 
+for customer attrition.
+
+Business Impact:
+Converting just 20% of month-to-month customers to annual contracts could reduce 
+overall churn rate by approximately 3-5 percentage points.
+
+
+Finding 2: CUSTOMER TENURE DRAMATICALLY AFFECTS CHURN RISK
+--------------------------------------------------------------------------------
+
+Customer retention improves significantly with tenure:
+
+Tenure Group           Churn Rate      Customer Count
+0-1 year               38.97%          (13,)
+1-2 year               29.13%          (12,)
+2+ years               15.99%        (49,)
+
+Key Insight:
+New customers (first year) exhibit 2.4x higher churn rates than 
+long-term customers. The first 12 months represent a critical retention window.
+
+Business Impact:
+Reducing first-year churn by 25% could save approximately 
+212 customers annually.
+
+
+Finding 3: TECH SUPPORT SERVICES REDUCE CHURN SIGNIFICANTLY
+--------------------------------------------------------------------------------
+
+Premium service adoption shows strong correlation with retention:
+
+Tech Support Status    Churn Rate      Customer Count
+Without Tech Support   41.64%           3,473
+With Tech Support      15.17%           2,044
+
+Key Insight:
+Customers without tech support are 2.7x more likely to churn. Similar 
+patterns exist for Online Security and Device Protection services.
+
+Business Impact:
+Bundling premium services could reduce churn among at-risk customers by 30%.
+
+
+Finding 4: PRICING AND CHURN CORRELATION
+--------------------------------------------------------------------------------
+
+Monthly charge analysis reveals pricing sensitivity:
+
+Customer Segment       Avg Monthly Charge
+Churned Customers     $ 74.44
+Retained Customers    $ 61.27
+Difference            $ 13.18
+
+Key Insight:
+Churned customers pay $13.18 more per month on average. This suggests 
+price sensitivity or value perception issues among high-paying customers.
+
+Business impace:
+Implementing loyalty discounts for high-paying customers could improve retention 
+among this valuable segment.
+
+
+Finding 5: FIBER OPTIC SERVICE QUALITY CONCERNS
+--------------------------------------------------------------------------------
+
+Internet service type shows unexpected churn patterns:
+
+Service Type          Churn Rate      Customer Count
+Fiber Optic            41.89%           3,096
+DSL                    18.96%           2,421
+No Internet             7.40%           1,526
+
+Key Insight:
+Fiber optic customers show 2.2x higher churn rates than DSL customers, 
+despite typically being higher-value customers. This suggests potential service 
+quality or expectation management issues.
+
+Business Impact:
+Addressing fiber optic service quality could save 400+ high-value customers 
+annually.
+
+                        CORRELATION ANALYSIS SUMMARY
+--------------------------------------------------------------------------------
+
+Top Positive Correlations with Churn (Increase Risk):
+
+1. InternetService                 0.317
+2. MonthlyCharges                  0.193
+3. PaperlessBilling                0.192
+4. SeniorCitizen                   0.151
+5. MultipleLines                   0.036
+
+Top Negative Correlations with Churn (Decrease Risk):
+1. PaymentMethod                  -0.263
+2. TechSupport                    -0.274
+3. OnlineSecurity                 -0.281
+4. tenure                         -0.352
+5. Contract                       -0.397
+
+                      BUSINESS RECOMMENDATIONS
+--------------------------------------------------------------------------------
+
+RECOMMENDATION 1: CONTRACT INCENTIVE PROGRAM
+--------------------------------------------------------------------------------
+Priority:    HIGH
+Investment:  MEDIUM
+
+ACTION PLAN:
+- Offer 15-20% discount for customers switching to annual contracts
+- Target month-to-month customers with >6 months tenure
+- Implement automated email campaigns highlighting savings
+- Create special offers during renewal periods
+
+TARGET SEGMENT:
+- 3,875 month-to-month customers
+- Focus on customers with high monthly charges (>$74+)
+
+EXPECTED OUTCOMES:
+- Reduce churn rate by 15-20% in target segment
+- Improve customer lifetime value
+- Increase revenue predictability
+- Estimated annual savings: $XXX,XXX (calculate based on ARPU)
+
+
+RECOMMENDATION 2: NEW CUSTOMER WELCOME PROGRAM
+--------------------------------------------------------------------------------
+Priority:    HIGH
+Investment:  HIGH
+
+ACTION PLAN:
+- Implement comprehensive 6-month onboarding program
+- Assign dedicated customer success managers for first 90 days
+- Provide free premium support for first 3 months
+- Schedule proactive check-in calls at 1, 3, and 6 months
+- Create educational content for service optimization
+
+TARGET SEGMENT:
+- All new customers (first 12 months)
+- Special focus on high-value customers
+
+EXPECTED OUTCOMES:
+- Reduce first-year churn by 25%
+- Improve customer satisfaction scores
+- Increase premium service adoption
+- Save approximately 212 customers annually
+
+
+RECOMMENDATION 3: PREMIUM SERVICE BUNDLE STRATEGY
+--------------------------------------------------------------------------------
+Priority:    MEDIUM
+Investment:  LOW
+
+ACTION PLAN:
+- Create "Protection Plus" bundle (Tech Support + Online Security + Device Protection)
+- Offer bundle at 20% discount vs individual services
+- Target customers without any premium services
+- Use as retention tool for at-risk customers
+
+TARGET SEGMENT:
+- 3,473 customers without Tech Support
+- Customers showing early churn signals
+
+EXPECTED OUTCOMES:
+- Reduce churn by 30% among adopters
+- Increase ARPU by $10-15
+- Improve customer support efficiency
+- Create stronger switching barriers
+
+
+RECOMMENDATION 4: PRICING & VALUE OPTIMIZATION
+--------------------------------------------------------------------------------
+Priority:    MEDIUM
+Investment:  LOW
+
+ACTION PLAN:
+- Implement loyalty discounts for long-term customers
+- Create value-added services for high-paying customers
+- Review pricing transparency and bill clarity
+- Introduce usage optimization tools
+
+TARGET SEGMENT:
+- Customers paying >$74+ per month
+- Customers on month-to-month contracts with high charges
+
+EXPECTED OUTCOMES:
+- Improve price satisfaction among high-value customers
+- Reduce price-driven churn by 15%
+- Enhance perceived value proposition
+
+
+RECOMMENDATION 5: FIBER OPTIC SERVICE QUALITY INITIATIVE
+--------------------------------------------------------------------------------
+Priority:    URGENT
+Investment:  HIGH
+
+ACTION PLAN:
+- Conduct comprehensive fiber optic service audit
+- Identify and resolve speed/reliability issues
+- Implement proactive network monitoring
+- Create fiber-specific customer support team
+- Develop targeted communication about improvements
+
+TARGET SEGMENT:
+- All 3,096 fiber optic customers
+- Priority on customers showing dissatisfaction signals
+
+EXPECTED OUTCOMES:
+- Reduce fiber optic churn from 41.9% to 19.0% (matching DSL)
+- Save 400+ high-value customers annually
+- Improve brand reputation
+- Enable confident fiber optic marketing
+
+                        EXPECTED BUSINESS IMPACT
+--------------------------------------------------------------------------------
+
+If all recommendations are implemented successfully:
+
+Current State:
+- Total Customers:        7,043
+- Churned Annually:       1,869
+- Churn Rate:             26.54%
+
+Projected State (12 months):
+- Expected Churn Reduction:  20-30%
+- Customers Saved:           467 - 560
+- Improved Churn Rate:       19.90% - 18.58%
+
+Revenue Impact:
+- Average Monthly Charge:    $64.76
+- Annual Revenue per Customer: $777.14
+- Estimated Annual Savings:  $363,118 - $435,742
+
+                        VISUALIZATIONS CREATED
+--------------------------------------------------------------------------------
+
+The following charts support this analysis:
+
+1. churn_distribution.png          - Overall churn breakdown
+2. churn_by_contract.png          - Contract type analysis
+3. churn_by_tenure.png            - Customer lifetime patterns
+4. churn_by_services.png          - Service impact comparison
+5. churn_by_techsupport.png       - Tech support effect
+6. monthly_charges_boxplot.png    - Pricing distribution
+7. correlation_heatmap.png        - Feature relationships
+8. top_correlations.png           - Key churn drivers
+9. summary_dashboard.png          - Executive overview
+
+                            CONCLUSION
+--------------------------------------------------------------------------------
+
+This analysis reveals clear, actionable patterns in customer churn behavior. 
+Contract type, customer tenure, and premium service adoption emerge as the 
+strongest predictors of churn.
+
+The recommended initiatives, if implemented, could reduce churn by 20-30%, 
+representing significant revenue protection and customer lifetime value 
+improvement.
+
+Next phase will involve building predictive models to identify at-risk 
+customers before they churn, enabling proactive retention efforts.
+
+                        REPORT END
+--------------------------------------------------------------------------------
+
+Generated: February 26, 2026 at 01:55 PM
