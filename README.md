@@ -6,7 +6,7 @@
 
 ##  Project Overview
 
-A comprehensive end-to-end data science project that predicts customer churn for a telecommunications company using machine learning. This project demonstrates the complete data science workflow from exploratory data analysis to model deployment.
+A comprehensive end-to-end data science project that predicts customer churn for a telecommunications company using machine learning. This project demonstrates the complete data science workflow from exploratory data analysis to model generation.
 
 **Project Goal:** Identify customers likely to cancel their service and provide actionable recommendations to reduce churn rate by 20-30%.
 
