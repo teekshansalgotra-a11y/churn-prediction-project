@@ -10,7 +10,7 @@ A complete end-to-end machine learning pipeline that predicts customer churn for
 
 | Metric | Baseline Model | Optimized Model |
 |---|---|---|
-| Accuracy | 78% | 86% |
+| Accuracy | 78% | 82% |
 | Precision | — | High |
 | Recall | — | High |
 | Model | Logistic Regression | Random Forest + Tuning |
